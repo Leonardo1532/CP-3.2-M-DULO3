@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="../CS/index.css">
+</head>
+
+<body>
+    <div class="content">
+        <form>
+            <div class="title"><span>Cadastro de Carro</span></div>
+            <div class="cadastro">
+                <label for="cadastroMarca">Marca</label>
+                <input type="text" name="marca" id="cadastroMarca" placeholder="Ex: Fiat" />
+            </div>
+            <div class="cadastro">
+                <label for="cadastroModelo">Modelo</label>
+                <input type="text" name="modelo" id="cadastroModelo" placeholder="Ex: Touro" />
+            </div>
+            <div class="cadastro">
+                <label for="cadastroAno">Ano</label>
+                <input type="text" name="ano" id="cadastroAno" placeholder="Ex: 2023" />
+            </div>
+            <div class="cadastro">
+                <label for="cadastroValor">Valor</label>
+                <input type="text" name="valor" id="cadastroValor" placeholder="Ex: 120000" />
+            </div>
+            <div class="cadastro">
+                <label for="cadastroCor">Cor</label>
+                <input type="text" name="cor" id="cadastroCor" placeholder="Ex: silver" />
+            </div>
+            <div class="cadastro">
+                <label for="cadastroAutomatico">Automático</label>
+                <Select name="automatico" id="cadastroAutomatico">
+                    <option class="option" value="option">Escolha uma Opção</option>
+                    <option class="option" value="true">True</option>
+                    <option class="option" value="false">False</option>
+                </Select>
+            </div>
+            <div class="cadastro">
+                <button type="button" id="bottom">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>
